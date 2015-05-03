@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  each val, x in course
+    h1=val.INSTNM
+  div
+    table
+      tr
+        th ID Number
+        th Institution Address
+        th City of Institution
+        th State
+        th Zip
+        th Name of Administrator
+      tr
+        each value, i in course
+          td=value.UNITID
+          td=value.ADDR
+          td=value.CITY
+          td=value.STABBR
+          td=value.ZIP
+          td=value.CHFNM
